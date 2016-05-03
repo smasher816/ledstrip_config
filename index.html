@@ -1,0 +1,63 @@
+<form onsubmit="download(this['name'].value, this['text'].value)">
+<fieldset>
+	<div class="form-group">
+		<label for="#number">Version</label>
+		<input type="number" name="version" value="1" disabled/>
+	</div>
+	<div class="form-group">
+		<label for="#preset">Preset</label>
+		<input type="number" name="preset" min="1" value="1" required/>
+	</div>
+	<div class="form-group">
+		<label for="#msgeq7_in_min">MSGEQ7 Min</label>
+		<input type="number" name="msgeq7_in_min" min="0" max="255" value="20"/>
+	</div>
+	<div class="form-group">
+		<label for="#brightness">Brightness</label>
+		<input type="number" name="brightness" min="0" max="255" value="255"/>
+	</div>
+	<div class="form-group">
+		<label for="#visualizer_frequency">Visualizer Frequency</label>
+		<select name="visualizer_frequency">
+			<option value="0">63 Hz (Bass)</option>
+			<option value="1">160 Hz</option>
+			<option value="2">400 Hz</option>
+			<option value="3">1 kHz (Mid)</option>
+			<option value="4">2.5 kHz</option>
+			<option value="5">6.25 kHz</option>
+			<option value="6">16 kHz (High)</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<label for="#sensitivity">Sensitivity</label>
+		<input type="number" name="sensitivity" min="0" value="100"/>
+	</div>
+	<div class="form-group">
+		<label for="#min">Min</label>
+		<input type="number" name="min" value="10"/>
+	</div>
+</fieldset>
+	<input type="submit" value="Download"/>
+</form>
+
+<script type="text/css">
+	.input-group label, .input_group input {
+		display: inline-block;
+		vertical-align: middle;
+	}
+</script>
+
+<script type="text/javascript">
+function download(filename, text) {
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+</script>

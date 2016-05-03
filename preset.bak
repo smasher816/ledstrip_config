@@ -1,0 +1,65 @@
+		Preset presets[] = new Preset[5];
+		for (int i=0; i<5; i++) {
+			presets[i] = new Preset();
+			for (int j=0; j<2; j++) {
+				presets[i].inputs[j] = new InputType();
+				presets[i].inputs[j] = new InputType();
+			}
+		}
+
+		/*presets[0].inputs[0].handler.set(Input.PALETTE.ordinal());
+		presets[0].inputs[0].min.set(0);
+		presets[0].inputs[0].max.set(255);
+		presets[0].inputs[1].handler.set(Input.SENSITIVITY.ordinal());
+		presets[0].inputs[1].min.set(0);
+		presets[0].inputs[1].max.set(200);
+		presets[0].modes[0].set(Visualizer.STATIC.ordinal());
+		presets[0].modes[1].set(Visualizer.MUSIC.ordinal());
+		presets[0].palette.set(6);
+		presets[0].color.set(new Color(0xFF, 0x00, 0x00));
+
+		presets[1].inputs[0].handler.set(Input.BRIGHTNESS.ordinal());
+		presets[1].inputs[0].min.set(0);
+		presets[1].inputs[0].max.set(255);
+		presets[1].inputs[1].handler.set(Input.PALETTE.ordinal());
+		presets[1].inputs[1].min.set(0);
+		presets[1].inputs[1].max.set(255);
+		presets[1].modes[0].set(Visualizer.NONE.ordinal());
+		presets[1].modes[1].set(Visualizer.NONE.ordinal());
+		presets[1].palette.set(6);
+		presets[1].color.set(new Color(0xFF, 0x00, 0x00));
+
+		presets[2].inputs[0].handler.set(Input.BRIGHTNESS.ordinal());
+		presets[2].inputs[0].min.set(0);
+		presets[2].inputs[0].max.set(255);
+		presets[2].inputs[1].handler.set(Input.CYCLE.ordinal());
+		presets[2].inputs[1].min.set(0);
+		presets[2].inputs[1].max.set(300);
+		presets[2].modes[0].set(Visualizer.CYCLE.ordinal());
+		presets[2].modes[1].set(Visualizer.NONE.ordinal());
+		presets[2].palette.set(6);
+		presets[2].color.set(new Color(0xFF, 0x00, 0x00));
+
+		presets[3].inputs[0].handler.set(Input.BRIGHTNESS.ordinal());
+		presets[3].inputs[0].min.set(0);
+		presets[3].inputs[0].max.set(255);
+		presets[3].inputs[1].handler.set(Input.TEMPERATURE.ordinal());
+		presets[3].inputs[1].min.set(0);
+		presets[3].inputs[1].max.set(7000);
+		presets[3].modes[0].set(Visualizer.NONE.ordinal());
+		presets[3].modes[1].set(Visualizer.NONE.ordinal());
+		presets[3].palette.set(6);
+		presets[3].color.set(new Color(0xFF, 0xFF, 0xFF));
+
+		presets[4].inputs[0].handler.set(Input.HUE.ordinal());
+		presets[4].inputs[0].min.set(0);
+		presets[4].inputs[0].max.set(255);
+		presets[4].inputs[1].handler.set(Input.BLINK.ordinal());
+		presets[4].inputs[1].min.set(0);
+		presets[4].inputs[1].max.set(1000);
+		presets[4].modes[0].set(Visualizer.BLINK.ordinal());
+		presets[4].modes[1].set(Visualizer.NONE.ordinal());
+		presets[4].palette.set(6);
+		presets[4].color.set(new Color(0x00, 0xFF, 0x00));*/
+		/////
+
